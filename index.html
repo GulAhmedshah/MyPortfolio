@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Solidity Developer Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
@@ -32,12 +34,12 @@
     }
 
     .nav-link:hover {
-      color: #ffcc00 !important;
+      color: #4cc9f0 !important;
     }
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #3a015c, #7209b7);
       color: white;
       padding: 150px 0;
       text-align: center;
@@ -55,7 +57,7 @@
     }
 
     .hero-section .btn {
-      background-color: #ffcc00;
+      background-color: #4cc9f0;
       border: none;
       color: #333;
       font-weight: 500;
@@ -64,7 +66,8 @@
     }
 
     .hero-section .btn:hover {
-      background-color: #ffd700;
+      background-color: #4361ee;
+      color: white;
       transform: translateY(-5px);
     }
 
@@ -88,7 +91,7 @@
       align-items: center;
       width: 200px;
       height: 200px;
-      background: linear-gradient(135deg, #ffd700, #ffcc00);
+      background: linear-gradient(135deg, #4cc9f0, #4361ee);
       border-radius: 50%;
       padding: 10px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -115,9 +118,46 @@
       line-height: 1.8;
     }
 
+    /* Skills Section */
+    .skills-section {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      padding: 100px 0;
+    }
+
+    .skills-section h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .skill-card {
+      background: #fff;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #7209b7;
+    }
+
     /* Projects Section */
     .projects-section {
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      background: #ffffff;
       padding: 100px 0;
     }
 
@@ -165,7 +205,7 @@
     }
 
     .project-card .btn {
-      background-color: #ffcc00;
+      background-color: #4cc9f0;
       border: none;
       color: #333;
       font-weight: 500;
@@ -174,8 +214,83 @@
     }
 
     .project-card .btn:hover {
-      background-color: #ffd700;
+      background-color: #4361ee;
+      color: white;
       transform: translateY(-3px);
+    }
+
+    /* Acknowledgements Section */
+    .acknowledgements-section {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      padding: 100px 0;
+    }
+
+    .acknowledgements-section h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .testimonial-card:after {
+      content: ''';
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      font-size: 5rem;
+      color: #4cc9f0;
+      opacity: 0.2;
+      font-family: Arial;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .author-details h5 {
+      margin-bottom: 0;
+      color: #333;
+    }
+
+    .author-details p {
+      margin-bottom: 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .cert-badge {
+      display: inline-block;
+      background: #7209b7;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.9rem;
     }
 
     /* Contact Section */
@@ -200,12 +315,12 @@
     }
 
     .contact-section .form-control:focus {
-      border-color: #ffcc00;
-      box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.1);
+      border-color: #4cc9f0;
+      box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.1);
     }
 
     .contact-section .btn {
-      background-color: #ffcc00;
+      background-color: #4cc9f0;
       border: none;
       color: #333;
       font-weight: 500;
@@ -214,7 +329,8 @@
     }
 
     .contact-section .btn:hover {
-      background-color: #ffd700;
+      background-color: #4361ee;
+      color: white;
       transform: translateY(-3px);
     }
 
@@ -230,13 +346,28 @@
       margin: 0;
       font-size: 0.9rem;
     }
+
+    .social-links {
+      margin-bottom: 15px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #4cc9f0;
+    }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" href="#">Solidity Developer Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -246,7 +377,13 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acknowledgements">Acknowledgements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -259,259 +396,195 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p class="lead">I build modern, responsive, and user-friendly DApps/web3 and web applications.</p>
+      <h1>Solidity Developer & Smart Contract Auditor</h1>
+      <p class="lead">Building Secure and Innovative DeFi & NFT Ecosystems</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
   <!-- About Section -->
- <div class="about-section">
-  <div class="container">
-    <h2 class="text-center mb-5">About Me</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center">
-        <div class="profile-img-container">
-          <img src="Screenshot_20250323_030935_WhatsApp.jpg" alt="Gul Ahmed" class="profile-img">
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="profile-img-container">
+            <img src="Screenshot_20250323_030935_WhatsApp.jpg" alt="Gul Ahmed" class="profile-img">
+          </div>
+          <strong>Gul Ahmed</strong> <br>
+          <strong>BS-Software Engineering</strong>
+          <div class="mt-3">
+            <span class="cert-badge">Solidity Development</span>
+            <span class="cert-badge">Smart Contract Auditing</span>
+            <span class="cert-badge">DeFi Protocols</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p class="lead">I am a <strong>dedicated Solidity developer and auditor</strong> with a passion for building the foundational layers of <em>Web3</em>.</p>
           
-        </div> 
-        <strong>Gul Ahmed</strong> <br>
-            <strong>BS-Software Engineering</strong>
-      </div>
-      <div class="col-md-6">
-        <p class="lead">I'm a passionate <strong>Web3 and Blockchain Developer</strong> with hands-on experience in decentralized applications, smart contracts, and blockchain protocols.</p>
-        
-        <p>As a fresh graduate, I've immersed myself in modern web technologies, completing certified courses in <strong>Node.js</strong> and <strong>React</strong> under the guidance of mentor <strong>Mosh Hamedani</strong>, with practical implementation of core concepts.</p>
+          <p>My expertise lies in <strong>architecting, developing, and rigorously testing secure smart contracts</strong> for decentralized applications (dApps), with a proven track record in <strong>DeFi protocols, Automated Market Makers (AMMs), and NFT collections</strong>.</p>
 
-        <p>My technical toolkit includes:</p>
-        <ul>
-          <li>Blockchain: Solidity, Ethereum, Smart Contracts, Web3.js</li>
-          <li>Frontend: React.js, Next.js, Tailwind CSS</li>
-          <li>Backend: Node.js, Express.js, MongoDB</li>
-          <li>DevOps: Git, CI/CD, AWS Basics</li>
-        </ul>
+          <p>My development process is rooted in a <strong>deep understanding of the Ethereum Virtual Machine (EVM)</strong> and blockchain fundamentals, ensuring that the code I write is not only functional but also <strong>gas-optimized and secure</strong>. I complement my core blockchain skills with full-stack capabilities in <strong>React.js and Node.js</strong>, allowing me to contribute across the entire dApp development lifecycle.</p>
 
-        <p>Currently seeking a <strong>remote internship</strong> where I can contribute my technical skills while expanding my knowledge of enterprise frameworks and architectures. I thrive in collaborative environments and adapt quickly to new technologies.</p>
+          <p>Beyond development, I am <strong>highly skilled in smart contract testing and security auditing</strong>. I methodically analyze code to identify vulnerabilities, generate detailed audit reports, and provide actionable recommendations to fortify projects against threats. My work is backed by <strong>professional certifications</strong> from industry leaders like <strong>Cyfrin Updraft and SpeedRunEthereum</strong>.</p>
 
-        <div class="mt-4">
-          <a href="#projects" class="btn btn-primary me-2">View My Projects</a>
-          <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+          <div class="mt-4">
+            <a href="#projects" class="btn btn-primary me-2">View My Projects</a>
+            <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-ethereum"></i>
+            </div>
+            <h3>Blockchain Development</h3>
+            <p>Expertise in Solidity language with deep understanding of Ethereum Virtual Machine and blockchain architecture principles.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Security Auditing</h3>
+            <p>Proficient in smart contract testing, vulnerability identification, and generating comprehensive audit reports.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h3>DeFi & NFT Protocols</h3>
+            <p>Experience developing DeFi applications, AMMs, and NFT collections with focus on security and efficiency.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Knowledge of React.js for dApp frontend development with JavaScript expertise.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Backend Development</h3>
+            <p>Experience with Node.js for backend services that interact with smart contracts.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Development Tools</h3>
+            <p>Proficient with Hardhat, Foundry, Truffle, Ethers.js, Web3.js, Git, and other blockchain development tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
- <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Simple-Fullstack-DFX</h5>
+              <p class="card-text">Implemented the contracts for the Decentralised Financial Exchange Application</p>
+              <a href="https://github.com/GulAhmedshah/Simple-Fullstack-DFX.git" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Testing TSwap</h5>
+              <p class="card-text">Tested TSwap with 100% Test coverage using Foundry</p>
+              <a href="https://github.com/GulAhmedshah/Full_Coverage_Test_for_Tswap.git" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Testing PuppyRaffle Contract</h5>
+              <p class="card-text">In this project Puppy Raffle contract was tested with 100% coverage</p>
+              <a href="https://github.com/GulAhmedshah/Test_Fore_PuppyRaffel_with_full_coverage.git" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Additional projects would go here -->
+      </div>
+    </div>
+  </section>
 
-<section id="projects" class="projects-section">
-  <div class="container">
-    <h2>My Projects</h2>
-    <div class="row">
-        <!-- Project 1.11 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title">Simple-Fullstack-DFX</h5>
-            <p class="card-text">Implemented the contracts for the Decentralised Financial Exchange Application </p>
-            <a href="https://github.com/GulAhmedshah/Simple-Fullstack-DFX.git" class="btn">View on GitHub</a>
+  <!-- Acknowledgements Section -->
+  <section id="acknowledgements" class="acknowledgements-section">
+    <div class="container">
+      <h2>Acknowledgements & Testimonials</h2>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Gul has demonstrated exceptional skills in smart contract development and auditing. His attention to detail and deep understanding of blockchain security principles make him a valuable asset to any Web3 project."</p>
+            <div class="testimonial-author">
+              <div class="author-details">
+                <h5>Cyfrin Updraft Team</h5>
+                <p>Blockchain Security Education Platform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"The contributions to SpeedRunEthereum challenges showcase a strong grasp of Ethereum development concepts and the ability to implement complex DeFi protocols with security best practices."</p>
+            <div class="testimonial-author">
+              <div class="author-details">
+                <h5>SpeedRunEthereum Community</h5>
+                <p>Ethereum Learning Platform</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Project 1.1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title"> Testing TSwap</h5>
-            <p class="card-text"> Tested TSwap with 100% Test coverage using Foundry </p>
-            <a href="https://github.com/GulAhmedshah/Full_Coverage_Test_for_Tswap.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 2.2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
-          <div class="card-body">
-            <h5 class="card-title"> Testing PuppyRaffel Contract </h5>
-            <p class="card-text">In this project Puupy Raffle contract was tested with 100% coverage</p>
-            <a href="https://github.com/GulAhmedshah/Test_Fore_PuppyRaffel_with_full_coverage.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3.3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #84fab0, #8fd3f4);">
-          <div class="card-body">
-            <h5 class="card-title"> Testing Prepaidforward and ZeroCouponBond Contracts</h5>
-            <p class="card-text">Foundry Testing basics implememted with apps </p>
-            <a href="https://github.com/GulAhmedshah/Testing_Practice.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 4.4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #fbc2eb, #a6c1ee);">
-          <div class="card-body">
-            <h5 class="card-title">Prediction Markets Challenge Solidity code</h5>
-            <p class="card-text">Scaffold-ETH 2 : Implemented prediction Marketd with oracle and successfully completed this challenge</p>
-            <a href="https://github.com/GulAhmedshah/speedrunethereum-challenge-Decision-Making.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 5.5 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
-          <div class="card-body">
-            <h5 class="card-title">Over-Collateralized-Lending</h5>
-            <p class="card-text">Scaffold-ETH 2: Takes collateral and lets you borrow other assets against the value of the collateral.</p>
-            <a href="https://github.com/GulAhmedshah/challenge-5-over-collateralized-Lending.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 6.6 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #84fab0, #8fd3f4);">
-          <div class="card-body">
-            <h5 class="card-title">AMM-Dex</h5>
-            <p class="card-text">Scaffold-ETH 2: Allows users to seamlessly trade ERC20 BALLOONS ($BAL) with ETH in a decentralized manner.</p>
-            <a href="https://github.com/GulAhmedshah/Challenge-4-AMM-Dex.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-       <!-- Project 7.7 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title">🎲 Dice Game</h5>
-            <p class="card-text">Scaffold-ETH 2: Allows users to roll the dice to try and win the prize. </p>
-            <a href="https://github.com/GulAhmedshah/Challenge-3-Dicegame.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-       <!-- Project 8.8 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #fbc2eb, #a6c1ee);">
-          <div class="card-body">
-            <h5 class="card-title">🏵 Token Vendor 🤖</h5>
-            <p class="card-text">Scaffold-ETH 2: Users purchase your ERC20 token, transfer it, and sell it back to the vendor.</p>
-            <a href="https://github.com/GulAhmedshah/Challenge-2-token-vendor.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-       <!-- Project 9.9 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title">🔏 Decentralized Staking App</h5>
-            <p class="card-text">Scaffold-ETH 2:Dapp that lets users send ether to a contract and stake if the conditions are met</p>
-            <a href="https://github.com/GulAhmedshah/StakingApp-Challeng1.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-       <!-- Project 10.10 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #f6d365, #fda085);">
-          <div class="card-body">
-            <h5 class="card-title">🎟 Simple NFT Example</h5>
-            <p class="card-text">Scaffold-ETH 2: Deployed an NFT to a publi </p>
-            <a href="https://github.com/GulAhmedshah/MintSimpleNFT-ERC721.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title">Simple-Fullstack-DFX</h5>
-            <p class="card-text">Implemented the contracts for the Decentralised Financial Exchange Application </p>
-            <a href="https://github.com/GulAhmedshah/Simple-Fullstack-DFX.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
-          <div class="card-body">
-            <h5 class="card-title"> Simple Staking&Rewards</h5>
-            <p class="card-text">Simulation of the Staking and geting Reward in response</p>
-            <a href="https://github.com/GulAhmedshah/SimpleStakenRewardDapp.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #84fab0, #8fd3f4);">
-          <div class="card-body">
-            <h5 class="card-title">MintedAsimple NFT-ERC721</h5>
-            <p class="card-text">How actually the NFT-ERC721 works and geting started with Minting Concepts </p>
-            <a href="https://github.com/GulAhmedshah/MintSimpleNFT-ERC721.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #fbc2eb, #a6c1ee);">
-          <div class="card-body">
-            <h5 class="card-title">NFT Markeypalce</h5>
-            <p class="card-text">Coded the Contracts for understanding the NFT Marketplace and its machanism .</p>
-            <a href="https://github.com/GulAhmedshah/simpleNFTmarketplace.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 5 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
-          <div class="card-body">
-            <h5 class="card-title">Multi-Signature-Wallet</h5>
-            <p class="card-text">Dive into the concept of Wallet system in Blockchain with implementation</p>
-            <a href="https://github.com/GulAhmedshah/Multi-Signature-Wallet.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 6 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #f6d365, #fda085);">
-          <div class="card-body">
-            <h5 class="card-title"> Voting System</h5>
-            <p class="card-text">Coded Contracts for the Voting System where user can rasie vote</p>
-            <a href="https://github.com/GulAhmedshah/Voting-System.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 7 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #84fab0, #8fd3f4);">
-          <div class="card-body">
-            <h5 class="card-title">All React Core Concepts</h5>
-            <p class="card-text">During Training session implemented all react core ceoncepts </p>
-            <a href="https://github.com/GulAhmedshah/ReactAllConceptsImplementation.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-  <!-- Project 8 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title">Backend:Node.js with MongoDb  </h5>
-            <p class="card-text"> Node.js: All from theoretical understanding to Practical Implementation </p>
-            <a href="https://github.com/GulAhmedshah/NodeAllConceptsImplementations.git" class="btn">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-<!-- Project 9 -->
-      <div class="col-md-4 mb-4">
-        <div class="card project-card" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-          <div class="card-body">
-            <h5 class="card-title"> Webscraping With Mongdb </h5>
-            <p class="card-text"> Here Implemented a full stack Webscraping App with Mongodb </p>
-            <a href="https://github.com/GulAhmedshah/NodeAllConceptsImplementations.git" class="btn">View on GitHub</a>
+      
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="text-center">
+            <h3 class="mb-4">Certifications & Achievements</h3>
+            <div>
+              <span class="cert-badge"><i class="fas fa-certificate me-2"></i>Cyfrin Updraft - Security Auditing & Testing</span>
+              <span class="cert-badge"><i class="fas fa-certificate me-2"></i>SpeedRunEthereum - GitHub Contribution</span>
+              <span class="cert-badge"><i class="fas fa-certificate me-2"></i>Solidity Fundamentals</span>
+              <span class="cert-badge"><i class="fas fa-certificate me-2"></i>Blockchain Security Specialist</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
   <!-- Contact Section -->
@@ -520,11 +593,10 @@
       <h2>Contact Me</h2>
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <form   action="https://formspree.io/f/mnnpvbae"
-  method="POST">
+          <form action="https://formspree.io/f/mnnpvbae" method="POST">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control"  id="name" required>
+              <input type="text" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -536,7 +608,6 @@
             </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
-          
         </div>
       </div>
     </div>
@@ -545,12 +616,16 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
       <p>&copy; 2023 Gul Ahmed. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
-  
 </body>
 </html>
